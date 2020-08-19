@@ -1,4 +1,5 @@
-export default[ {
+import {IProduct} from './model/iproduct';
+[ {
       "id": 1,
       "name": "Body Luxuries Sweet Lavender Hand Sanitizer",
       "description": "Cleans your hands",
