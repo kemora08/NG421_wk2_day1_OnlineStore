@@ -1,5 +1,7 @@
 import {IProduct} from './model/iproduct';
-[ {
+
+
+const products: IProduct[] = [{
       "id": 1,
       "name": "Body Luxuries Sweet Lavender Hand Sanitizer",
       "description": "Cleans your hands",
@@ -80,3 +82,5 @@ import {IProduct} from './model/iproduct';
       "imgUrl": "http://dummyimage.com/189x109.png/cc0000/ffffff",
       "price": "$74.37"
     }];
+
+    export {products};
