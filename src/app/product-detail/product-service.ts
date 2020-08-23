@@ -5,5 +5,9 @@ import { products} from '../products';
   providedIn: 'root'
 })
 export class ProductService {
+shoppingcart: IProduct[] = [];
+products: IProduct[] = [];
+
+constructor() { }
 
 }
