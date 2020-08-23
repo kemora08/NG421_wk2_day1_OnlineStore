@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../product-detail/product-service';
+import { IProduct } from '../model/iproduct';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  shoppingcart: IProduct[] = [];
+  shoppingCart: IProduct[];
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
+    this.shoppingCart = [];
+    this.shoppingCart = this.productService.getShoppingCart();
   }
 
 }
