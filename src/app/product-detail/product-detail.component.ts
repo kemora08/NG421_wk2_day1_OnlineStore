@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IProduct } from '../model/iproduct';
 
 @Component({
   selector: 'app-product-detail',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailComponent implements OnInit {
 
+  @Input() product: IProduct;
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
