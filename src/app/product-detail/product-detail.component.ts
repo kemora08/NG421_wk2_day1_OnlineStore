@@ -9,9 +9,13 @@ import { IProduct } from '../model/iproduct';
 export class ProductDetailComponent implements OnInit {
 
   @Input() product: IProduct;
+  @Output() productAdded: EventEmitter<IProduct> = new EventEmitter<IProduct>();
   constructor() { }
 
   ngOnInit() {
   }
 
+  addToCart(): void {
+    this.productAdded.emit(this.product);
+  }
 }

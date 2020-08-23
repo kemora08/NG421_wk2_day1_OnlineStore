@@ -10,7 +10,7 @@ shoppingcart: IProduct[] = [];
 products: IProduct[] = [];
 
 constructor() { 
-  this.products = products
+  this.products = products;
 }
 
 getProducts(): IProduct[] {
