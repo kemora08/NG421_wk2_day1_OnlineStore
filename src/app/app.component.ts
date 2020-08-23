@@ -8,7 +8,7 @@ import { ProductService } from './product-detail/product-service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  product: IProduct[] = [];
+  products: IProduct[] = [];
 
   constructor(private productService: ProductService,) {}
 
